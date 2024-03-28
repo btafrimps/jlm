@@ -1,0 +1,193 @@
+
+/*styling image_container*/
+.image_container{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+
+}
+/* styling logo in african cockail page*/
+.logo{
+    width:100px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+/*styling of the incredients*/
+.ginger {
+    width: auto; 
+    height: 80px; 
+    margin-right: 15px;
+    
+}
+.habiscus {
+    width: auto; 
+    height: 80px; 
+    margin-right: 15px;
+}
+.cloves {
+    width: auto; 
+    height: 80px; 
+    margin-right: 15px;
+}
+.orange {
+    width: auto; 
+    height: 80px; 
+    margin-right: 15px;
+}
+.pineapple {
+    width: auto; 
+    height: 80px; 
+    margin-right: 15px;
+}
+.watermelon {
+    width: auto; 
+    height: 80px; 
+    margin-right: 15px;
+}
+.rice {
+    width: auto; 
+    height: 80px; 
+    margin-right: 15px;
+}
+.sugar {
+    width: auto; 
+    height: 80px; 
+    margin-right: 15px;
+}
+
+.meat {
+    width: auto; 
+    height: 80px; 
+    margin-right: 15px;
+}
+.fish {
+    width: auto; 
+    height: 80px; 
+    margin-right: 15px;
+}
+
+.onion {
+    width: auto; 
+    height: 80px; 
+    margin-right: 15px;
+}
+.palm {
+    width: auto; 
+    height: 80px; 
+    margin-right: 15px;
+}
+
+.pepper {
+    width: auto; 
+    height: 80px; 
+    margin-right: 15px;
+}
+
+/*african_coctail_recipes*/
+/*zonkom*/
+
+.zonkom {
+    width: auto; 
+    height: 300px; 
+    margin-right: 15px;
+    padding-top: 20px;
+
+}
+
+.col-md-4 {
+    text-align: center;
+    padding-top: 40px;
+}
+
+.col-md-4 h4,
+.col-md-4 a,
+.col-md-4 p {
+  margin:0 auto;
+  text-align: center;
+  padding-top: 40px;
+}
+  
+
+/*sobolo*/
+.habiscus {
+    width: auto; 
+    height: 300px; 
+    margin-right: 15px;
+    padding-top: 20px;
+
+}
+
+/*lamugee*/
+.ricedrink {
+    width: auto; 
+    height: 300px; 
+    margin-right: 15px;
+    padding-top: 20px;
+
+}
+
+/*.....*/
+
+
+/* styling the about us page*/
+.us{
+  display: block; /* Ensure the image is a block element */
+  margin: 0 auto; /* Center the image horizontally */
+  max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+  height: auto; /* Maintain the aspect ratio of the image */
+  width: 50%;
+  padding-top: 50px;
+}
+p {
+    text-align: left;
+  }
+
+.about_heading{
+    padding-top: 10%;
+    margin-left: 35%;
+    font-size:xx-large;
+}
+
+.about_wording{
+    padding-top: 3%;
+    align-content: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    
+} 
+
+.founder{
+    width:300px; 
+    height: 350px; 
+    padding-top: 30px;
+    float:center;
+    border-radius: 50%;
+}
+
+.mission_heading{
+    padding-top: 10%;
+    text-align: center;
+    font-size:x-large;
+}
+
+.mission_wording{
+    padding-top: 3%;
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    
+} 
+
+.meet_the_team{
+    text-align: center;
+    padding-top: 30px;
+}
+.TL{
+    text-align: center;
+}
+  
+
+
+
+

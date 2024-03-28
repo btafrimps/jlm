@@ -1,0 +1,67 @@
+.logo{
+    width:100px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+
+/*footer styling*/
+
+.footer{
+    width:100%;
+    padding: 100px 30px 20px;
+    background-color:rgb(220, 222, 228); 
+    height:200px;  
+
+}
+.footerContainer{
+    width:100%;
+    padding: 70px 30px;
+    padding-top: 0%;
+    
+
+}
+.socialIcons{
+    display: flex;
+    justify-content:center;
+    background-color: rgb(188, 182, 212);
+
+}
+
+.socialIcons a {
+    margin-right: 10px; /* Adjust the space between icons by changing this value */
+}
+
+.socialIcons a i {
+    font-size: 40px; /* Adjust the size as needed */
+  }
+
+.contact{
+    margin-left: 900px;
+    padding-top: 50px;
+    font-style: italic;
+    
+}
+
+.follow-heading{
+  color: #333; /* Set text color */
+  font-size: 24px; /* Set font size */
+  font-weight: bold; /* Set font weight to bold */
+  text-align: center; /* Align text to the center */
+  margin-bottom: 20px; /* Add some bottom margin for spacing */
+  padding-top: 30px;
+}
+
+.small{
+    margin-right: 900px;
+    margin-top: -130px;
+}
+
+.small p {
+    margin-right: 0px;
+    font-size: medium;
+    text-align: justify;
+    font-style: italic;
+}
+
+
