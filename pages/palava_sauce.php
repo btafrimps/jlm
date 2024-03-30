@@ -16,7 +16,7 @@
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
                 <!--code for logo-->
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="../index2.php">
                     <img src="../images/logo.jpg" class="logo">
                     Just Like Mama's
                 </a>

@@ -1,3 +1,6 @@
+<?php
+  include ("connection.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -194,10 +197,10 @@
     <div class="row">
 
       <div class="col-6 col-md-6 mb-6">
-        <h5>Contact Details</h5>
+        <h5>Contact Us On</h5>
         <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Email: btafrimps65@gmail.com</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Phone: +233 501363466</a></li>
         </ul>
       </div>
 
@@ -207,7 +210,7 @@
     </div>
 
     <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-      <p>&copy; 2024 Company, Inc. All rights reserved.</p>
+      <p>&copy; Copyright 2024; All rights reserved.</p>
       <ul class="list-unstyled d-flex">
         <li class="ms-3"><a href=""><i class="fa-brands fa-instagram" style="font-size:30px;"></i></a></li>
         <li class="ms-3"><a href=""><i class="fa-brands fa-twitter" style="font-size:30px;"></i></a></li>
