@@ -186,7 +186,81 @@ p {
 .TL{
     text-align: center;
 }
-  
+
+/*style for practice*/
+#main_title{
+    text-align: center;
+    background-color: #333;
+    color:#fff;
+    padding:20px;
+    letter-spacing: 2px;
+    font-weight: 500px;
+}
+.box1 h2{
+    float: left;
+}
+.box1 button{
+    float:right
+}
+.container{
+    margin-top: 50px;
+}
+
+  /* form styling*/
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: auto;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+textarea,
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
 
 
 

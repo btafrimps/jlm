@@ -54,6 +54,9 @@ header("location:chefUpload.php");
 </head>
 
 <body>
+<div class="logo-container">
+        <img src="images/logo.jpg" class="logo" alt="Logo">
+    </div>
     <div class="container">
         <div class="row">
             <div class="col-md-6">

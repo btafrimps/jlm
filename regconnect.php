@@ -21,7 +21,7 @@
             $result_insert = mysqli_query($con, $sql_insert);
            if($result_insert){ //if it inserts properly
               echo '<script>
-              window.location.href="chef.cook.php";
+              window.location.href="chefUpload.php";
               alert("Passwords do not match with confirmation!!");
               </script>';
                 header("Location:register.php");

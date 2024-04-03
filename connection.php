@@ -2,15 +2,15 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$db_name="jlm";
+$database="jlm";
 
 //create connection
-$conn = new mysqli($servername,$username,$password,$db_name);
+$conn = mysqli_connect($servername,$username,$password,$database);
 
 //check connection
-if($conn->connect_error){
-       die("connection failed:".$conn->connect_error );
+if(!$conn){
+       die("connection failed:");
 }
-echo "connected successfully";    
+echo "successful";    
 
 ?>

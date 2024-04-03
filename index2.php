@@ -131,96 +131,62 @@
             </div>
         </div>
         <div class="container">
-        <div class="WecomeTag text-center">
-            <p class="lead"> Every food project start with a single step. <br/> Engage us through our socials so we connect you to<br/>
+            <div class="WecomeTag text-center">
+                <p class="lead"> Every food project start with a single step. <br /> Engage us through our socials so we
+                    connect you to<br />
                     our amazing partner chefs or cooks accross the world.</p>
-        </div>
+            </div>
 
-                    <div class="d-flex align-items-center justify-content-center">
-            
+            <div class="d-flex align-items-center justify-content-center">
+
                 <button type="button" class=" p-2 m-2 btn btn-primary shadow">Sign up</button>
-                    <button type="button" class="p-2 m-2 btn btn-primary shadow">Sign In</button>
-        </div>
-           
+                <button type="button" class="p-2 m-2 btn btn-primary shadow">Sign In</button>
+            </div>
+
         </div>
     </main>
-    <!--footer html-->
-    <!-- <footer class = "footer">
-        <div class="footerContainer">
+    
 
-
-            <h3 class="follow-heading"> Follow us on!! </h3>
-            <div class="socialIcons">
-                <a href="https://www.facebook.com/IntoTheWorldWeGo/"><i class="fa-brands fa-facebook"></i></a>
-                <a href=""><i class="fa-brands fa-instagram"></i></a>
-                <a href=""><i class="fa-brands fa-tiktok"></i></a>
-                <a href="https://www.youtube.com/channel/UCNUo9SSgN2YOvttgbIEB9lg"><i class="fa-brands fa-youtube"></i></a><br>
-                <h4>Contact us on</h4>
-                <h5>Email: btafrimps65@gmail.com</h5>
-                <h5>Phone: +233 501363466</h5>
-                <h5>Whatsapp: +233 501363466</h5>
-            </div>
-
-                
-            </div>
-
-            <div class="contact">
-                <h4>Contact us on</h4>
-                <h5>Email: btafrimps65@gmail.com</h5>
-                <h5>Phone: +233 501363466</h5>
-                <h5>Whatsapp: +233 501363466</h5>
-            </div>
-
-            <div class="small">
-                <h3>Ready to cook?</h3><h4>Lets Talk</h4>
-                <p>Every food project start with a single step.Engage us through our socials so we connect you to
-                    our amazing partner chefs/cooks accross the world.</p>
-            </div>
-
-            <--footerBottom-->
-            <!--footerBottom-->
-            <!-- <div class="footerBottom">
-                <p>Copyright &copy; 2024; Designed by Battist Asare-Frimpong</p>
-            </div> -->
-
-
-
-        </div>
-
-
-
-    <!-- </footer>  -->
-    <p>
-    <div class="bg-body-tertiary">
+    </div>
+   
+    
+    <div class="bg-body-tertiary" >
         <div class="container">
-        <footer>
-    <div class="row">
+            <footer>
+                <div class="row">
 
-      <div class="col-6 col-md-6 mb-6">
-        <h5>Contact Us On</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Email: btafrimps65@gmail.com</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Phone: +233 501363466</a></li>
-        </ul>
-      </div>
+                    <div class="col-6 col-md-6 mb-6">
+                        <h5>Contact Us On</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Email:
+                                    btafrimps65@gmail.com</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Phone: +233
+                                    501363466</a></li>
+                        </ul>
+                    </div>
 
-      <div class="col-md-5 offset-md-1 mb-3">
-        kajsndkajsndkajnsdkajsndka
-      </div>
-    </div>
+                    <div class="col-md-5 offset-md-1 mb-3">
+                        <h5>How to work with us</h5>Contact us through our social media pages or<br> send an email to
+                        workwithusjlm@gmail.com.<br>Please note: DO NOT CALL!!
+                    </div>
+                </div>
 
-    <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-      <p>&copy; Copyright 2024; All rights reserved.</p>
-      <ul class="list-unstyled d-flex">
-        <li class="ms-3"><a href=""><i class="fa-brands fa-instagram" style="font-size:30px;"></i></a></li>
-        <li class="ms-3"><a href=""><i class="fa-brands fa-twitter" style="font-size:30px;"></i></a></li>
-        <li class="ms-3"><a href="https://www.facebook.com/IntoTheWorldWeGo/"><i class="fa-brands fa-facebook" style="font-size:30px;"></i></a></li>
-      </ul>
-    </div>
-  </footer>
+                <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                    <p>&copy; Copyright 2024; All rights reserved. <br> Designed by Battista Asare-Frimpong</p>
+
+                    <ul class="list-unstyled d-flex">
+                        <li class="ms-3"><a href=""><i class="fa-brands fa-instagram" style="font-size:30px;"></i></a>
+                        </li>
+                        <li class="ms-3"><a href=""><i class="fa-brands fa-twitter" style="font-size:30px;"></i></a>
+                        </li>
+                        <li class="ms-3"><a href="https://www.facebook.com/IntoTheWorldWeGo/"><i
+                                    class="fa-brands fa-facebook" style="font-size:30px;"></i></a></li>
+                    </ul>
+                </div>
+            </footer>
         </div>
- 
-</div>
+
+    </div>
 
 </body>
 
