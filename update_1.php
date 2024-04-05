@@ -8,7 +8,6 @@
  
 
 
-
     $query="SELECT * FROM signin where id= '$id' ";
     $result= mysqli_query($conn, $query);
 
@@ -39,6 +38,7 @@
     $recipe_name =$_POST['recipe_name'];
     $Recipe_Description =$_POST['Recipe_Description'];
     $Youtube_Link =$_POST['Youtube_Link'];
+    //$image=$_FILES['file'];
 
     $query = "UPDATE signin 
     SET chef_name = '$chef_name',recipe_name = '$recipe_name', Recipe_Description = '$Recipe_Description', Youtube_Link ='$Youtube_Link'
@@ -70,26 +70,12 @@
     <label for="recipe-name">youtube link:</label><br>
     <input type="text" id="recipe-name" name="Youtube_Link" value ="<?php echo $row['Youtube_Link'] ?>"><br>
 
+    <!--<label for="image">Image:</label><br>
+    <input type="text" id="image" name="image" value ="<?//php print_r($image)?>"><br>-->
+
     <input type="submit" class="btn btn-success" name="Update_Recipes" value="UPDATE">
 
 </form>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

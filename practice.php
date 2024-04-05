@@ -2,7 +2,7 @@
 <?php include('connection.php');?>
 <div class="box1">
     <h2>ALL DATA</h2>
-    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">ADD CHEF</button>
+    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">ADD RECIPE</button>
 </div>
 <table class="table table-hover table-bordered table-striped">
     <thead>
@@ -12,6 +12,7 @@
             <th>recipe_name</th>
             <th>Recipe_Description</th>
             <th>Youtube link</th>
+            <th>Image<th>
             <th>Update</th>
             <th>Delete</th>
         </tr>
@@ -38,6 +39,7 @@
             <td><?php echo $row['recipe_name']; ?></td>
             <td><?php echo $row['Recipe_Description']; ?></td>
             <td><?php echo $row['Youtube_Link']; ?></td>
+            <td><?php echo $row['Image']; ?></td>
             <td><a href="update_1.php? id=<?php echo $row['id']; ?>" class="btn btn-success">Update</a></td>
             <td><a href="delete.php? id=<?php echo $row['id']; ?>" class="btn btn-danger">Delete</a></td>
 
@@ -89,7 +91,7 @@ if(isset($_GET['delete_msg'])){
 
 
 <!-- Modal from bootstrap -->
-<form action="insert.php" method="post">
+<form action="insert.php" method="post" enctype="multipart/form-data" >
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -102,7 +104,8 @@ if(isset($_GET['delete_msg'])){
                         <span class="close-btn" onclick="toggleForm()">X</span>
                         <h2>Add Recipe</h2>
 
-
+                        <label for="fileupload">Select Image</label>
+                        <input type="file" name="fileupload" required>
 
                         <label for="chef-name">Name:</label><br>
                         <input type="text" id="chef-name" name="chef_name"><br>
@@ -115,6 +118,9 @@ if(isset($_GET['delete_msg'])){
 
                         <label for="recipe-name">youtube link:</label><br>
                         <input type="text" id="recipe-name" name="Youtube_Link"><br>
+
+                        <!--<label for="image">Images:</label><br>
+                        <input type="file" id="image" name="image" accept="image/*"><br>-->
 
 
 

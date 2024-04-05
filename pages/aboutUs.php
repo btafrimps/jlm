@@ -73,7 +73,7 @@
     <main>
        <img src="/jlm/images/uten.jpg" class="us">
        <h3 class="about_heading">About Just Like Mama's Recipes</h3>
-       <p class="about_wording">Simply Recipes is here to help you cook delicious meals with less stress and more joy. 
+       <p class="about_wording">Just Like Mama's Recipe is here to help you cook delicious meals with less stress and more joy. 
         We offer recipes and cooking advice for home cooks, by home cooks. Helping create “kitchen wins” is what we’re all about.Simply Recipes 
         was founded in 2003 by Elise Bauer as a home cooking blog to record her favorite family recipes. Today, Simply Recipes has grown
         into a trusted resource for home cooks with more than 3,000 tested recipes, guides, and meal plans, drawing over 15 million readers 
@@ -116,7 +116,7 @@
 
                 <div class="col-md-6">
                     <!-- Content for the second column -->
-                    <h3 class="mission_heading">Linder Mckintochs</h3>
+                    <h3 class="mission_heading">Chef Nyonyo Nutor</h3>
                     <h5 class="TL"> TEAM LEAD</h5>
                     <p class="mission_wording">Emma has over 10 years of experience creating food and cooking content for both web and print and another
                      5 years within the print publishing industry. She joined the Simply Recipes team in 2016 as Managing Editor 
@@ -146,14 +146,14 @@
 
                 <div class="col-md-6">
                     <!-- Content for 3rd team member -->  
-                    <img src="/jlm/images/chef3.jpg" class="founder">
+                    <img src="/jlm/images/chef5.jpg" class="founder">
                 </div>
 
                 <div class="col-md-6">
                     <!-- Content for the second column -->
-                    <h3 class="mission_heading">Chef Sweet Adjeley</h3>
+                    <h3 class="mission_heading">Pearline Donalds</h3>
                     <h5 class="TL"> SENIOR EDITOR AND ART DIRECTOR</h5>
-                    <p class="mission_wording">Megan is an editor and recipe developer with 15 years of wide-ranging experience.
+                    <p class="mission_wording">Pearline is an editor and recipe developer with 15 years of wide-ranging experience.
                     Her obsession with food and cooking began in childhood and adolescence, with early cooking experiments that 
                     involved setting the oven on fire while trying to make croissants for the first time (they still tasted great!)
                     Sarah’s love of food and photography grew during her time as a vegetable farmer on Virginia’s Eastern Shore. After

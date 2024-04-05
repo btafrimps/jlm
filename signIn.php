@@ -1,5 +1,46 @@
 <?php
-  include ("connection.php");
+   if(isset($_POST['submit'])){
+    include("connection.php");
+    //$username = $_POST['user'];
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+   // $confirmpassword = $_POST['confirmpassword'];
+
+    //$sql = "select * from register where email ='$email'";
+    //$result = mysqli_query ($conn, $sql);
+    //$count_user = mysqli_num_rows($result);
+
+    $sql = "select * from register where email ='$email'";
+    $result = mysqli_query ($conn, $sql);
+    $count_email = mysqli_num_rows($result);
+
+    if($count_user==0 || $count_rows==0){
+      if($password==$password){
+        $hash =password_hash($password, PASSWORD_DEFAULT);
+        $sql ="insert into register(email,password) values('$email', '$password')";
+        $result=mysqli_query($conn,$sql);
+
+     //this code takes you to practice.php page after registering
+     header("location:practice.php");
+      }
+      else{
+        echo '<script>
+        alert("passwords do not match");
+        window.location.href="register.php"
+        </script>';
+      }
+    }
+
+    if($count_user==0 || "count_rows==0"){
+
+    }
+    else{
+      echo '<script>
+      alert("user already exists");
+      window.location.href = "chefUpload.php"
+      </script>';
+    }
+  }
 ?>
 <!doctype html>
 <html lang="en">
@@ -71,13 +112,13 @@
     </header>
     <div id="form">
         <h1 id="heading">Sign In<h1><br></h1>
-            <form name="form" action="processLogin.php" method="post">
-                <!--This form sends data to processLogin.php using the POST method-->
+            <form name="form" action="signIn.php" method="post">
+                <!--This form sends data to signIn.php using the POST method-->
                 <i class="bi bi-envelope-fill"></i>
                 <input type="email" id="email" name="email" placeholder="Enter Email" required><br><br>
                 <i class="bi bi-file-lock2-fill"></i>
                 <input type="password" id="pass" name="pass" placeholder="Enter Password" required><br><br>
-                <input type="submit" id="btn" name="submit" value="SignIn" />
+                <input type="submit" id="btn" name="submit" value="submit" />
 
 
 

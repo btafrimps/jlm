@@ -1,3 +1,8 @@
+<?php
+include("../connection.php");
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,6 +16,12 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <style>
+    .container .col-md-4 img {
+        width: 300px;
+    }
+    </style>
 
 </head>
 
@@ -39,8 +50,7 @@
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">Recipes</a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="pages/african_cocktail_recipes.php">African
-                                        Coctail</a></li>
+                                <li><a class="dropdown-item" href="pages/african_cocktail_recipes.php">African Coctail</a></li>
                                 <li><a class="dropdown-item" href="#">African Soups </a></li>
                                 <li><a class="dropdown-item" href="#">Main Dish</a></li>
                             </ul>
@@ -71,77 +81,48 @@
     </header>
 
     <main>
+
+        <?php
+    $sql = "SELECT * FROM signin";
+    $result = mysqli_query($conn, $sql);
+
+    $result = mysqli_fetch_all($result, MYSQLI_ASSOC);
+    ?>
         <div class="container">
+
+            <?php foreach($result as $row):?>
             <div class="row">
-                <div class="col-md-4">
-                    <!-- Content for the first column -->
-                    
-                    <img src="/jlm/images/palmnut_soup.jpg" class="zonkom">
+                <div class="card mb-3">
+                    <div class="row">
+                        <div class="col-md-4">
 
+                            <img src="<?php echo "../uploads/" .$row["Image"] ?>" class="img-fluid rounded-start">
+                        </div>
+                        <div class="col-md-6 mt-4">
+                            <div class="card-body">
+                                <h5 class="card-title"><?php echo $row["recipe_name"] ?></h5>
+                                <p class="card-text"><?php echo $row["Recipe_Description"] ?></p>
+                                <p class="card-text">Chef: <small class="text-body-secondary"><?php echo $row["chef_name"] ?></small></p>
+                                <a class="btn btn-primary" href="<?php echo $row['Youtube_Link'] ?>" target="_blank" role="button">watch
+                                    Video</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <p>&nbsp;</p>
 
                 </div>
 
-                <div class="col-md-4">
-                    <!-- Content for the second column -->
-                    <h4>African Soup Recipe</h4>
-                    <a href="palmnut_soup.php">African Palmnut Soup</a>
-                    <p> By Sweet Adjeley</p>
-                </div>
-
-                <div class="col-md-4">
-                    <!-- Content for the third column -->
-                    
-                    <img src="/jlm/images/palmnut_soup.jpg" class="zonkom">
-                </div>
             </div>
 
-            <!--for kontomire-->
-            <div class="row">
-                <div class="col-md-4">
-                    <!-- Content for the first column -->  
-                    <img src="/jlm/images/kontomire_stew.jpg" class="habiscus">
-                </div>
-
-                <div class="col-md-4">
-                    <!-- Content for the second column -->
-                    <h4>African Soup Recipe</h4>
-                    <a href="palava_sauce.php">African Palava Sauce </a>
-                    <p> By Sweet Adjeley</p>
-                </div>
-
-                <div class="col-md-4">
-                    <!-- Content for the third column -->
-                    <img src="/jlm/images/kontomire_stew.jpg" class="habiscus">
-                </div>
-            </div>
-
-
-            <!--for tomato stew-->
-            <div class="row">
-                <div class="col-md-4">
-                    <!-- Content for the first column -->
-                    <img src="/jlm/images/tomato_stew.jpg" class="ricedrink">
-                </div>
-
-                <div class="col-md-4">
-                    <!-- Content for the second column -->
-                    <h4>African Soup Recipe</h4>
-                    <a href="tomato_sauce.php">Tomato Sauce </a>
-                    <p> By Sweet Adjeley</p>
-                </div>
-
-                <div class="col-md-4">
-                    <!-- Content for the third column -->
-                    <img src="/jlm/images/tomato_stew.jpg" class="ricedrink">
-                </div>
-            </div>
+            <?php endforeach; ?>
         </div>
     </main>
 
 
 
 
-  </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>

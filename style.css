@@ -230,6 +230,7 @@ form {
 
 label {
     font-weight: bold;
+    
 }
 
 input[type="text"],
@@ -260,8 +261,87 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     background-color: #45a049;
+
 }
 
+/* styling the about blog page*/
+.blogPic{
+    display: block; /* Ensure the image is a block element */
+    margin: 0 auto; /* Center the image horizontally */
+    max-width: 80%; /* Ensure the image doesn't exceed its container's width */
+    height: 10%; /* Maintain the aspect ratio of the image */
+    width: 50%;
+    padding-top: 10px;
+  }
+.blog_heading{
+    padding-top: 5%;
+    font-size:x-large;
+    font-weight: medium;
+    font:serif;
+    padding-left: 1%;
+    padding-right: 5%;
+    text-align:justify;
+}
 
+.blog_wording{
+    padding-top: 1%;
+    text-align:justify;
+    padding-left: 1%;
+    padding-right: 5%;
+    
+} 
+
+.health_heading{
+    padding-top: 1%;
+    text-align: center;
+    font-size:x-large;
+    font-weight: bolder;
+}
+
+.health_wording{
+    padding-top: 3%;
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    
+} 
+
+.workout_heading{
+    padding-top: 20%;
+    text-align: center;
+    font-size:x-large;
+    font-weight: bolder;
+}
+
+.workout_wording{
+    padding-top: 3%;
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    
+}
+
+.workout{
+    height: 500px;
+    width:450px;
+    padding-top: 120px;
+    padding-left: 6%;
+    padding-right: 5%;
+}
+
+.laugh{
+    height: 450px;
+    width:400px;
+    padding-top: 120px;
+    padding-left: 6%;
+    padding-right: 5%;
+}
+.jokeVideo{
+    text-align: left;
+    padding-top: 100px;
+    padding-left: 6%;
+    font-size:x-large;
+    font-weight: bolder;
+}
 
 

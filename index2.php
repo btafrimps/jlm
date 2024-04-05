@@ -14,6 +14,7 @@
 
     <title>Home Page</title>
     <link rel="stylesheet" href="stylelogo.css">
+    
 
 </head>
 
@@ -41,7 +42,7 @@
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">Recipes</a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="pages/african_cocktail_recipes.php">African
+                                <li><a class="dropdown-item" href="pages/asr.php">African
                                         Coctail</a></li>
                                 <li><a class="dropdown-item" href="pages/asr.php">African Soups </a></li>
                                 <li><a class="dropdown-item" href="#">Main Dish</a></li>
@@ -59,7 +60,7 @@
 
                         <!--navbar blogs-->
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Blogs</a>
+                            <a class="nav-link" href="pages/blogs.php">Blogs</a>
                         </li>
 
                     </ul>
@@ -97,24 +98,24 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="images/ampesis.jpg" class="d-block w-100" alt="banku">
-                        <div class="carousel-caption d-none d-md-block">
+                        <!--<div class="carousel-caption d-none d-md-block">
                             <h5>First slide label</h5>
                             <p>Some representative placeholder content for the first slide.</p>
-                        </div>
+                        </div>-->
                     </div>
                     <div class="carousel-item">
                         <img src="images/jollofs.jpg" class="d-block w-100" alt="jollofs">
-                        <div class="carousel-caption d-none d-md-block">
+                        <!--<div class="carousel-caption d-none d-md-block">
                             <h5>Second slide label</h5>
                             <p>Some representative placeholder content for the second slide.</p>
-                        </div>
+                        </div>-->
                     </div>
                     <div class="carousel-item">
                         <img src="images/bankuu.jpg" class="d-block w-100" alt="banku">
-                        <div class="carousel-caption d-none d-md-block">
+                        <!--<div class="carousel-caption d-none d-md-block">
                             <h5>Third slide label</h5>
                             <p>Some representative placeholder content for the third slide.</p>
-                        </div>
+                        </div>-->
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
@@ -132,7 +133,7 @@
         </div>
         <div class="container">
             <div class="WecomeTag text-center">
-                <p class="lead"> Every food project start with a single step. <br /> Engage us through our socials so we
+                <p class="lead" style="font-weight:thin;"> Every food project start with a single step. <br /> Engage us through our socials so we
                     connect you to<br />
                     our amazing partner chefs or cooks accross the world.</p>
             </div>
@@ -156,31 +157,31 @@
                 <div class="row">
 
                     <div class="col-6 col-md-6 mb-6">
-                        <h5>Contact Us On</h5>
+                        <h3 style= "font-family:comic sans ms; font-weight:bold;">Contact Us On</h3>
                         <ul class="nav flex-column">
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Email:
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary" style="font-family:comic sans ms; font-weight:light;">Email:
                                     btafrimps65@gmail.com</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Phone: +233
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary" style="font-family:comic sans ms; font-weight:light;">Phone: +233
                                     501363466</a></li>
                         </ul>
                     </div>
 
                     <div class="col-md-5 offset-md-1 mb-3">
-                        <h5>How to work with us</h5>Contact us through our social media pages or<br> send an email to
-                        workwithusjlm@gmail.com.<br>Please note: DO NOT CALL!!
+                        <h3 style="font-family:comic sans ms; font-weight:bold;"> How to work with us</h3> <p style="font-family:comic sans ms; font-weight:light;">Contact us through our social media pages or<br> send an email to
+                        workwithusjlm@gmail.com.<br>Please note: DO NOT CALL!!</p>
                     </div>
                 </div>
 
                 <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-                    <p>&copy; Copyright 2024; All rights reserved. <br> Designed by Battista Asare-Frimpong</p>
+                    <p style="font-family:comic sans ms; font-weight:light;">&copy; Copyright 2024; All rights reserved. <br> Designed by Battista Asare-Frimpong</p>
 
                     <ul class="list-unstyled d-flex">
-                        <li class="ms-3"><a href=""><i class="fa-brands fa-instagram" style="font-size:30px;"></i></a>
+                        <li class="ms-3"><a href=""><i class="fa-brands fa-instagram" style="font-size:40px;"></i></a>
                         </li>
-                        <li class="ms-3"><a href=""><i class="fa-brands fa-twitter" style="font-size:30px;"></i></a>
+                        <li class="ms-3"><a href=""><i class="fa-brands fa-twitter" style="font-size:40px;"></i></a>
                         </li>
                         <li class="ms-3"><a href="https://www.facebook.com/IntoTheWorldWeGo/"><i
-                                    class="fa-brands fa-facebook" style="font-size:30px;"></i></a></li>
+                            class="fa-brands fa-facebook" style="font-size:40px;"></i></a></li>
                     </ul>
                 </div>
             </footer>

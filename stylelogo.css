@@ -10,8 +10,9 @@
 .footer{
     width:100%;
     padding: 100px 30px 20px;
-    background-color:rgb(167, 172, 196); 
-    height:200px;  
+    background-color:rgb(196, 200, 227); 
+    height:200px;
+    font-family:math;  
 
 }
 .footerContainer{

@@ -19,7 +19,9 @@
         $hash =password_hash($password, PASSWORD_DEFAULT);
         $sql ="insert into register(user,email,password,confirmpassword) values('$username','$email', '$password', '$confirmpassword')";
         $result=mysqli_query($conn,$sql);
-header("location:chefUpload.php");
+
+      //this code takes you to sign in page after registering
+      header("location:signIn.php");
       }
       else{
         echo '<script>
@@ -58,14 +60,14 @@ header("location:chefUpload.php");
         <img src="images/logo.jpg" class="logo" alt="Logo">
     </div>
     <div class="container">
-        <div class="row">
-            <div class="col-md-6">
+       <!-- <div class="row">-->
+            <!--<div class="col-md-6">-->
                 <div id="form">
                     <h1 id="heading">Registration Form for Chefs/Cooks<h1><br></h1>
-                        <form name="form" action="register.php" method="POST">
+                        <form name="form" class="w-50" action="register.php" method="POST">
                             <!--Form sends data to register.php using the POST method -->
                             <label>Enter Username</label>
-                            <input type="text" id="user" name="user" placeholder="Enter Username" required><br><br>
+                            <input type="user" id="user" name="user" placeholder="Enter Username" required><br><br>
 
                             <label>Enter Email</label>
                             <input type="email" id="user" name="email" placeholder="Enter Email" required><br><br>
@@ -78,39 +80,12 @@ header("location:chefUpload.php");
                                 required><br><br>
 
                             <input type="submit" id="btn" value="submit" name="submit" />
-
-
-
-
-                            <!--<div class="d-flex align-items-center justify-content-center">
-                                <button type="button" class=" p-2 m-2 btn btn-primary shadow">Register</button>
-                            </div>-->
+                    
 
                 </div>
-            </div>
-           <!-- <div class="col-md-6">
-                <div id="form">
-                    <h1 id="heading">SignIn Form for Users<h1><br></h1>
-                        <form name="form" action="register.php" method="post">
-                            <!Form sends data to register.php using the POST method 
-                            <label>Enter Username</label>
-                            <input type="text" id="user" name="user" placeholder="Enter Username" required><br><br>
-
-                            <label>Enter Email</label>
-                            <input type="email" id="user" name="email" placeholder="Enter Email" required><br><br>
-
-                            <label>Enter Password</label>
-                            <input type="password" id="pass" name="pass" placeholder="Password" required><br><br>
-
-                            <div class="d-flex align-items-center justify-content-center">
-                                <a href="index2.php">
-                                    <button type="button" class=" p-2 m-2 btn btn-primary shadow">Sign in</button>
-
-                            </div>
-
-                </div>
-            </div>-->
-        </div>
+            <!--</div>-->
+           
+       <!-- </div>-->
     </div>
 
 

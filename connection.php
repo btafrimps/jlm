@@ -4,7 +4,7 @@ $username = "root";
 $password = "";
 $database="jlm";
 
-//create connection
+//create connection to the db
 $conn = mysqli_connect($servername,$username,$password,$database);
 
 //check connection
