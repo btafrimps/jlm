@@ -64,6 +64,20 @@
     <label for="recipe-name">Recipe_Name:</label><br>
     <input type="text" id="recipe-name" name="recipe_name" value ="<?php echo $row['recipe_name'] ?>"><br>
 
+    <label for="recipe-name">Location:</label><br>
+    <input type="text" id="location" name="location" value ="<?php echo $row['location'] ?>"><br>
+
+    <div class="form-group">
+    <label for="exampleFormControlSelect1">Recipe category</label>
+    <select class="form-control" id="category">
+        <option value="">Select Category</option>
+      <option value="African Cocktail" <?php if($row["food_category"] == "African Cocktail") {echo 'selected = "selected"';} ?>>African Cocktail</option>
+      <option value="African Soups" <?php if($row["food_category"] == "African Soups") {echo 'selected = "selected"';} ?>>African Soups</option>
+      <option value="African Swallow" <?php if($row["food_category"] == "African Swallow") {echo 'selected = "selected"';} ?> >African Swallow</option>
+    </select>
+  </div>
+
+
     <label for="ingredients">Recipe Description:</label><br>
     <textarea id="ingredients" name="Recipe_Description"><?php echo $row['Recipe_Description']; ?>"></textarea><br>
 

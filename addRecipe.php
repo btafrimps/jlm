@@ -144,6 +144,12 @@ if(isset($_POST['submit'])){
         <label for="chef_name">Chef Name:</label><br>
         <input type="text" id="chef_name" name="chef_name"><br><br>
 
+        <label for="chef_name">Food_category:</label><br>
+        <input type="text" id="food_category" name="food_category"><br><br>
+
+        <label for="chef_name">Location:</label><br>
+        <input type="text" id="location" name="location"><br><br>
+
         <label for="recipe_description">Recipe Description:</label><br>
         <textarea id="recipe_description" name="recipe_description" rows="4" cols="50"></textarea><br><br>
 

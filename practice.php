@@ -4,15 +4,17 @@
     <h2>ALL DATA</h2>
     <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">ADD RECIPE</button>
 </div>
-<table class="table table-hover table-bordered table-striped">
+<table class="table table-hover table-bordered table-striped table-fit">
     <thead>
         <tr>
             <th>id</th>
-            <th>chef_name</th>
-            <th>recipe_name</th>
-            <th>Recipe_Description</th>
+            <th>Chef Name</th>
+            <th>Recipe name</th>
+            <th>Recipe Description</th>
             <th>Youtube link</th>
-            <th>Image<th>
+            <th>Image</th>
+            <th>Category</th>
+            <th>Location</th>
             <th>Update</th>
             <th>Delete</th>
         </tr>
@@ -38,8 +40,10 @@
             <td><?php echo $row['chef_name']; ?></td>
             <td><?php echo $row['recipe_name']; ?></td>
             <td><?php echo $row['Recipe_Description']; ?></td>
-            <td><?php echo $row['Youtube_Link']; ?></td>
+            <td><a href='<?php echo $row['Youtube_Link']; ?>' target = '_blank'>Youtube Link</a></td>
             <td><?php echo $row['Image']; ?></td>
+            <td><?php echo $row['food_category']; ?></td>
+            <td><?php echo $row['location']; ?></td>
             <td><a href="update_1.php? id=<?php echo $row['id']; ?>" class="btn btn-success">Update</a></td>
             <td><a href="delete.php? id=<?php echo $row['id']; ?>" class="btn btn-danger">Delete</a></td>
 
@@ -112,6 +116,12 @@ if(isset($_GET['delete_msg'])){
 
                         <label for="recipe-name">Recipe_Name:</label><br>
                         <input type="text" id="recipe-name" name="recipe_name"><br>
+
+                        <label for="recipe-name">food_category:</label><br>
+                        <input type="text" id="food_category" name="food_category"><br>
+
+                        <label for="recipe-name">location:</label><br>
+                        <input type="text" id="location" name="location"><br>
 
                         <label for="ingredients">Recipe Description:</label><br>
                         <textarea id="ingredients" name="Recipe_Description"></textarea><br>

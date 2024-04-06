@@ -71,8 +71,8 @@ include("../connection.php");
                         </li>
 
                     </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <form class="d-flex" role="search" method = "POST" action = "asr.php">
+                        <input class="form-control me-2" type="search" placeholder="Search" name = "search" aria-label="Search">
                         <button class="btn btn-outline-success" type="submit">Search</button>
                     </form>
                 </div>
@@ -83,14 +83,27 @@ include("../connection.php");
     <main>
 
         <?php
-    $sql = "SELECT * FROM signin";
+   if(isset($_POST["search"])){
+    $search = $_POST["search"];
+    $sql = "SELECT * FROM `signin` WHERE food_category like '%$search%' or location like '%$search%' or recipe_name like '%$search%'";
+   }
+   else{
+   $sql = "SELECT * FROM signin";
+   }
     $result = mysqli_query($conn, $sql);
 
     $result = mysqli_fetch_all($result, MYSQLI_ASSOC);
     ?>
         <div class="container">
-
-            <?php foreach($result as $row):?>
+            <?php 
+               if(isset($_POST["search"])){
+            echo "Showing results for $search"; 
+               }
+            ?>
+           <?php if(count($result) <1){
+            echo "<p>Nothin found for $search";
+           }else { ?>
+            <?php foreach($result as $row){?>
             <div class="row">
                 <div class="card mb-3">
                     <div class="row">
@@ -102,7 +115,8 @@ include("../connection.php");
                             <div class="card-body">
                                 <h5 class="card-title"><?php echo $row["recipe_name"] ?></h5>
                                 <p class="card-text"><?php echo $row["Recipe_Description"] ?></p>
-                                <p class="card-text">Chef: <small class="text-body-secondary"><?php echo $row["chef_name"] ?></small></p>
+                                <p class="card-text">Chef: <small class="text-body-secondary"><?php echo $row["chef_name"] ?> | Location: <small class="text-body-secondary"><?php echo $row["location"] ?></small>
+                                <p class="card-text"></small><?php echo $row["food_category"]?></p>
                                 <a class="btn btn-primary" href="<?php echo $row['Youtube_Link'] ?>" target="_blank" role="button">watch
                                     Video</a>
                             </div>
@@ -115,7 +129,7 @@ include("../connection.php");
 
             </div>
 
-            <?php endforeach; ?>
+            <?php }} ?>
         </div>
     </main>
 

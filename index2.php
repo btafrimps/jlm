@@ -14,7 +14,7 @@
 
     <title>Home Page</title>
     <link rel="stylesheet" href="stylelogo.css">
-    
+
 
 </head>
 
@@ -69,13 +69,16 @@
                         </li>
 
                     </ul>
-                    <form class="d-flex" role="search">
+                    <form class="d-flex" role="search" method="POST" action="pages/asr.php">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-outline-success" type="submit">Search</button>
                     </form>
+
+                
                 </div>
             </div>
         </nav>
+        
     </header>
 
     <main>
@@ -138,7 +141,8 @@
         </div>
         <div class="container">
             <div class="WecomeTag text-center">
-                <p class="lead" style="font-weight:thin;"> Every food project start with a single step. <br /> Engage us through our socials so we
+                <p class="lead" style="font-weight:thin;"> Every food project start with a single step. <br /> Engage us
+                    through our socials so we
                     connect you to<br />
                     our amazing partner chefs or cooks accross the world.</p>
             </div>
@@ -151,34 +155,40 @@
 
         </div>
     </main>
-    
+
 
     </div>
-   
-    
-    <div class="bg-body-tertiary" >
+
+
+    <div class="bg-body-tertiary">
         <div class="container">
             <footer>
                 <div class="row">
 
                     <div class="col-6 col-md-6 mb-6">
-                        <h3 style= "font-family:comic sans ms; font-weight:bold;">Contact Us On</h3>
+                        <h3 style="font-family:comic sans ms; font-weight:bold;">Contact Us On</h3>
                         <ul class="nav flex-column">
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary" style="font-family:comic sans ms; font-weight:light;">Email:
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"
+                                    style="font-family:comic sans ms; font-weight:light;">Email:
                                     btafrimps65@gmail.com</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary" style="font-family:comic sans ms; font-weight:light;">Phone: +233
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"
+                                    style="font-family:comic sans ms; font-weight:light;">Phone: +233
                                     501363466</a></li>
                         </ul>
                     </div>
 
                     <div class="col-md-5 offset-md-1 mb-3">
-                        <h3 style="font-family:comic sans ms; font-weight:bold;"> How to work with us</h3> <p style="font-family:comic sans ms; font-weight:light;">Contact us through our social media pages or<br> send an email to
-                        workwithusjlm@gmail.com.<br>Please note: DO NOT CALL!!</p>
+                        <h3 style="font-family:comic sans ms; font-weight:bold;"> How to work with us</h3>
+                        <p style="font-family:comic sans ms; font-weight:light;">Contact us through our social media
+                            pages or<br> send an email to
+                            workwithusjlm@gmail.com.<br>Please note: DO NOT CALL!!</p>
                     </div>
                 </div>
 
                 <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-                    <p style="font-family:comic sans ms; font-weight:light;">&copy; Copyright 2024; All rights reserved. <br> Designed by Battista Asare-Frimpong</p>
+                    <p style="font-family:comic sans ms; font-weight:light;">&copy; Copyright 2024; All rights reserved.
+                        <br> Designed by Battista Asare-Frimpong
+                    </p>
 
                     <ul class="list-unstyled d-flex">
                         <li class="ms-3"><a href=""><i class="fa-brands fa-instagram" style="font-size:40px;"></i></a>
@@ -186,7 +196,7 @@
                         <li class="ms-3"><a href=""><i class="fa-brands fa-twitter" style="font-size:40px;"></i></a>
                         </li>
                         <li class="ms-3"><a href="https://www.facebook.com/IntoTheWorldWeGo/"><i
-                            class="fa-brands fa-facebook" style="font-size:40px;"></i></a></li>
+                                    class="fa-brands fa-facebook" style="font-size:40px;"></i></a></li>
                     </ul>
                 </div>
             </footer>
