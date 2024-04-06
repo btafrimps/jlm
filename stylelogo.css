@@ -84,18 +84,55 @@ h1{
 }
 /*styling input*/
 input{
-    width:90%;
+    width:100%;
     border-radius: 4px;
     border: 3px solid;
-    padding:5px
+    padding:5px;
+    
+    
 }
 /**/
 #btn{
     width:100%;
     padding:5px;
     font-size:large;
+    background-color: blue;
+    
 
 }
+
+
+/*stle for register form*/
+
+/* Style the container */
+.register_container {
+    /* Add padding and background color */
+    padding: 100px;
+    background-color: rgb(242, 238, 232);
+    width: 40%;
+    border-radius: 6px;
+    margin:28px auto;
+    padding: 20px;
+    box-shadow: 10px 10px 5px rgb(82 11 77);
+  }
+  
+  /* Style the heading */
+  .register_container {
+    /* Set font size, weight, and color */
+    font-size: 24px;
+    font-weight:bolder; 
+    color: #333;
+  }
+  .registerBody{
+    background-color: rgb(193, 202, 219);
+    
+    
+  }
+
+  
+  
+  
+  
 
 
 

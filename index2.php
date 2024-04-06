@@ -63,6 +63,11 @@
                             <a class="nav-link" href="pages/blogs.php">Blogs</a>
                         </li>
 
+                        <!--navbar chefs/cooks dashboard-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="signIn.php">Chefs/Cooks Dashboard</a>
+                        </li>
+
                     </ul>
                     <form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">

@@ -119,6 +119,7 @@
                 <i class="bi bi-file-lock2-fill"></i>
                 <input type="password" id="pass" name="pass" placeholder="Enter Password" required><br><br>
                 <input type="submit" id="btn" name="submit" value="submit" />
+                <a href="register.php">No Account? Register</a>
 
 
 
