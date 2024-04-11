@@ -38,10 +38,12 @@
     $recipe_name =$_POST['recipe_name'];
     $Recipe_Description =$_POST['Recipe_Description'];
     $Youtube_Link =$_POST['Youtube_Link'];
+    $food_category =$_POST['food_category'];
+    $location =$_POST['location'];
     //$image=$_FILES['file'];
 
     $query = "UPDATE signin 
-    SET chef_name = '$chef_name',recipe_name = '$recipe_name', Recipe_Description = '$Recipe_Description', Youtube_Link ='$Youtube_Link'
+    SET chef_name = '$chef_name',recipe_name = '$recipe_name', Recipe_Description = '$Recipe_Description', Youtube_Link ='$Youtube_Link', food_category='$food_category', location='$location'
      WHERE id ='$idnew' ";
     $result =mysqli_query($conn, $query);
 

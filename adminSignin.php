@@ -1,46 +1,33 @@
 <?php
-   if(isset($_POST['submit'])){
+// Ensure no output before the header
+if (isset($_POST['submit'])) {
     include("connection.php");
-    //$username = $_POST['user'];
+
     $email = $_POST['email'];
-    $password = $_POST['password'];
-   // $confirmpassword = $_POST['confirmpassword'];
+    $password = $_POST['pass'];
 
-    //$sql = "select * from register where email ='$email'";
-    //$result = mysqli_query ($conn, $sql);
-    //$count_user = mysqli_num_rows($result);
+    $sql = "select * from register where email ='$email' and role = 'admin'";
+    $result = mysqli_query($conn, $sql);
+    $count_admin = mysqli_num_rows($result);
 
-    $sql = "select * from register where email ='$email'";
-    $result = mysqli_query ($conn, $sql);
-    $count_email = mysqli_num_rows($result);
-
-    if($count_user==0 || $count_rows==0){
-      if($password==$password){
-        $hash =password_hash($password, PASSWORD_DEFAULT);
-        $sql ="insert into register(email,password) values('$email', '$password')";
-        $result=mysqli_query($conn,$sql);
-
-     //this code takes you to practice.php page after registering
-     header("location:practice.php");
-      }
-      else{
-        echo '<script>
-        alert("passwords do not match");
-        window.location.href="register.php"
-        </script>';
-      }
+    if ($count_admin == 1) { // Only register if email doesn't exist
+        $admin_row = mysqli_fetch_assoc($result);
+        echo "This is the  password: " . $password;
+       
+        if ($password == $admin_row['password']) { // Ensure passwords match
+            // $hash = password_hash($password, PASSWORD_DEFAULT);
+            // $sql = "insert into register(email, password) values('$email', '$hash')";
+            // $result = mysqli_query($conn, $sql);
+            echo '<script>alert("Welcome admin");</script>';
+            // Redirect after successful registration (assuming no errors)
+            header("location:userList.php");
+        } else {
+            echo '<script>alert("Passwords do not match");</script>'; // Handle password mismatch
+        }
+    } else {
+        echo '<script>alert("Username or password incorrect. Please try again");</script>'; // Handle existing user
     }
-
-    if($count_user==0 || "count_rows==0"){
-
-    }
-    else{
-      echo '<script>
-      alert("user already exists");
-      window.location.href = "chefUpload.php"
-      </script>';
-    }
-  }
+}
 ?>
 <!doctype html>
 <html lang="en">
@@ -79,23 +66,13 @@
                         <li class="nav-item">
                             <a class="nav-link" href="pages/asr.php">Recipes</a>
                         </li>
-                        <!--<li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">Recipes</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="pages/african_cocktail_recipes.php">African
-                                        Coctail</a></li>
-                                <li><a class="dropdown-item" href="pages/asr.php">African Soups </a></li>
-                                <li><a class="dropdown-item" href="#">Main Dish</a></li>
-                            </ul>
-                        </li>-->
+                        
                         <!--navbar about us-->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">About Us</a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="pages/aboutUs.php">Mission Statement</a></li>
-                                <!--<li><a class="dropdown-item" href="#">Message from Team Lead </a></li>-->
                             </ul>
                         </li>
 
@@ -114,15 +91,15 @@
         </nav>
     </header>
     <div id="form">
-        <h1 id="heading">Sign In<h1><br></h1>
-            <form name="form" action="signIn.php" method="post">
+        <h1 id="heading">Admin Sign In<h1><br></h1>
+            <form name="form" action="adminSignin.php" method="post">
                 <!--This form sends data to signIn.php using the POST method-->
                 <i class="bi bi-envelope-fill"></i>
                 <input type="email" id="email" name="email" placeholder="Enter Email" required><br><br>
                 <i class="bi bi-file-lock2-fill"></i>
                 <input type="password" id="pass" name="pass" placeholder="Enter Password" required><br><br>
                 <input type="submit" id="btn" name="submit" value="submit" />
-                <a href="register.php">No Account? Register</a>
+                <!--<a href="register.php">No Account? Register</a>-->
 
 
 

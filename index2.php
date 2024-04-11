@@ -38,23 +38,25 @@
 
 
                         <!--navbar Recipes-->
-                        <li class="nav-item dropdown">
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/asr.php">Recipes</a>
+                        </li>
+                       <!-- <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">Recipes</a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="pages/asr.php">African
-                                        Coctail</a></li>
+                                <li><a class="dropdown-item" href="pages/asr.php">Recipes</a></li>
                                 <li><a class="dropdown-item" href="pages/asr.php">African Soups </a></li>
                                 <li><a class="dropdown-item" href="#">Main Dish</a></li>
                             </ul>
-                        </li>
+                        </li>-->
                         <!--navbar about us-->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">About Us</a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="pages/aboutUs.php">Mission Statement</a></li>
-                                <li><a class="dropdown-item" href="#">Message from Team Lead </a></li>
+                               <!-- <li><a class="dropdown-item" href="#">Message from Team Lead </a></li>-->
                             </ul>
                         </li>
 
@@ -64,15 +66,23 @@
                         </li>
 
                         <!--navbar chefs/cooks dashboard-->
-                        <li class="nav-item">
-                            <a class="nav-link" href="signIn.php">Chefs/Cooks Dashboard</a>
+                         <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">Dashboard</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="signIn.php">Chefs/Cooks</a></li>
+                                <li><a class="dropdown-item" href="adminSignin.php">Administrator</a></li>
+                            </ul>
                         </li>
+                       <!-- <li class="nav-item">
+                            <a class="nav-link" href="signIn.php">Chefs/Cooks Dashboard</a>
+                        </li>-->
 
                     </ul>
-                    <form class="d-flex" role="search" method="POST" action="pages/asr.php">
+                    <!--<form class="d-flex" role="search" method="POST" action="#">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
+                    </form>-->
 
                 
                 </div>
@@ -144,14 +154,14 @@
                 <p class="lead" style="font-weight:thin;"> Every food project start with a single step. <br /> Engage us
                     through our socials so we
                     connect you to<br />
-                    our amazing partner chefs or cooks accross the world.</p>
+                    our amazing partner chefs or cooks accross the world.</p><BR><BR><BR><BR>
             </div>
 
-            <div class="d-flex align-items-center justify-content-center">
+            <!--<div class="d-flex align-items-center justify-content-center">
 
-                <button type="button" class=" p-2 m-2 btn btn-primary shadow">Sign up</button>
-                <button type="button" class="p-2 m-2 btn btn-primary shadow">Sign In</button>
-            </div>
+                <button type="button" class=" p-2 m-2 btn btn-primary shadow">.</button>
+                <button type="button" class="p-2 m-2 btn btn-primary shadow">.</button>
+            </div>-->
 
         </div>
     </main>

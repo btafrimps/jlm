@@ -14,6 +14,8 @@ if(isset($_POST['add_recipe'])){
     $recipe_name =$_POST['recipe_name'];
     $recipe_description =$_POST['Recipe_Description'];
     $youtube =$_POST['Youtube_Link'];
+    $food_category =$_POST['food_category'];
+    $location =$_POST['location'];
     
     //validation code
     if($chef_name== "" || empty($chef_name)){
@@ -22,8 +24,8 @@ if(isset($_POST['add_recipe'])){
     //the sql query thats does insert
     else{
        if (move_uploaded_file($uploadFile, $destination)){
-            $query = "INSERT INTO  signin (chef_name,recipe_name, Recipe_Description,Youtube_Link, Image)
-            VALUES ('$chef_name','$recipe_name','$recipe_description','$youtube', '$file')";
+            $query = "INSERT INTO  signin (chef_name,recipe_name, Recipe_Description,Youtube_Link, Image,food_category,location)
+            VALUES ('$chef_name','$recipe_name','$recipe_description','$youtube', '$file','$food_category','$location')";
    
             $result =mysqli_query($conn, $query);
    

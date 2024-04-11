@@ -46,7 +46,10 @@ include("../connection.php");
 
 
                         <!--navbar Recipes-->
-                        <li class="nav-item dropdown">
+                        <li class="nav-item">
+                            <a class="nav-link" href="asr.php">Recipes</a>
+                        </li>
+                        <!--<li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">Recipes</a>
                             <ul class="dropdown-menu">
@@ -54,20 +57,20 @@ include("../connection.php");
                                 <li><a class="dropdown-item" href="#">African Soups </a></li>
                                 <li><a class="dropdown-item" href="#">Main Dish</a></li>
                             </ul>
-                        </li>
+                        </li>-->
                         <!--navbar about us-->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">About Us</a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Mission Statement</a></li>
-                                <li><a class="dropdown-item" href="#">Message from Team Lead </a></li>
+                                <li><a class="dropdown-item" href="aboutUs.php">Mission Statement</a></li>
+                                <!--<li><a class="dropdown-item" href="#">Message from Team Lead </a></li>-->
                             </ul>
                         </li>
 
                         <!--navbar blogs-->
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Blogs</a>
+                            <a class="nav-link" href="blogs.php">Blogs</a>
                         </li>
 
                     </ul>

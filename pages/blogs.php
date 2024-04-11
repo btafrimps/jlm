@@ -35,23 +35,16 @@
 
 
                         <!--navbar Recipes-->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">Recipes</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="pages/african_cocktail_recipes.php">African
-                                        Coctail</a></li>
-                                <li><a class="dropdown-item" href="#">African Soups </a></li>
-                                <li><a class="dropdown-item" href="#">Main Dish</a></li>
-                            </ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/asr.php">Recipes</a>
                         </li>
                         <!--navbar about us-->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">About Us</a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Mission Statement</a></li>
-                                <li><a class="dropdown-item" href="#">Message from Team Lead </a></li>
+                                <li><a class="dropdown-item" href="aboutUs.php">Mission Statement</a></li>
+                                <!--<li><a class="dropdown-item" href="#">Message from Team Lead </a></li>-->
                             </ul>
                         </li>
 
@@ -61,10 +54,10 @@
                         </li>
 
                     </ul>
-                    <form class="d-flex" role="search">
+                    <!--<form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
+                    </form>-->
                 </div>
             </div>
         </nav>
