@@ -59,7 +59,11 @@
 
 <body class="registerBody">
 <div class="logo-container">
-        <img src="images/logo.jpg" class="logo" alt="Logo">
+<a class="navbar-brand" href="index2.php">
+    <img src="images/logo.jpg" class="logo">
+    Just Like Mama's
+  </a>
+        <!--<img src="images/logo.jpg" class="logo" alt="Logo">-->
     </div>
     <div class="register_container">
        <!-- <div class="row">-->

@@ -11,15 +11,26 @@
 
 </head>
 <body>
-    <h1 id="main_title"> JMLs DATABASE FOR USERS</H1>
-    <div class="container">
 <?php include('connection.php');?>
+<div class="container d-flex justify-content-between align-items-center" style="padding-bottom: 20px; margin-top: 0;">
+  <a class="navbar-brand" href="index2.php">
+    <img src="images/logo.jpg" class="logo">
+    Just Like Mama's
+  </a>
+  <h1 id="main_title">JLMs DATABASE FOR USERS</h1>
+</div>
+    <!--<h1 id="main_title"> JMLs DATABASE FOR USERS</H1>
+    <div class="container">
+
 <div class="box1">
     <h2>ALL DATA</h2>
-    <!--<button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">ADD USER</button>-->
-    <button onclick="location.href='practice.php';">Database for chefs/cooks</button>
+    <!-<button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">ADD USER</button>-->
+    <!--<button onclick="location.href='practice.php';">Database for chefs/cooks</button>-->
+    <button onclick="location.href='practice.php';" style="float: right; background-color: blue; color: white;">
+  Click here for Chefs/Cooks Database
+</button>
 
-</div>
+
 <table class="table table-hover table-bordered table-striped table-fit">
     <thead>
         <tr>
@@ -27,7 +38,7 @@
             <th>email</th>
             <th>password</th>
             <th>confirmpassword</th>
-            <th>Update</th>
+            <!--<th>Update</th>-->
             <th>Delete</th>
         </tr>
     </thead>
@@ -52,7 +63,7 @@
             <td><?php echo $row['email']; ?></td>
             <td><?php echo $row['password']; ?></td>
             <td><?php echo $row['confirmpassword']; ?></td>
-            <td><a href="userListUpdate.php? id=<?php echo $row['user']; ?>" class="btn btn-success">Update</a></td>
+           <!-- <td><a href="userListUpdate.php? id=<?php echo $row['user']; ?>" class="btn btn-success">Update</a></td>-->
             <td><a href="userListDelete.php? id=<?php echo $row['user']; ?>" class="btn btn-danger">Delete</a></td>
 
         </tr>

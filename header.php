@@ -11,5 +11,18 @@
 
 </head>
 <body>
-    <h1 id="main_title"> JMLs DATABASE FOR CHEFS/COOKS</H1>
-    <div class="container">
+
+<div class="container d-flex justify-content-between align-items-center" style="padding-bottom: 20px; margin-top: 0;">
+  <a class="navbar-brand" href="index2.php">
+    <img src="images/logo.jpg" class="logo">
+    Just Like Mama's
+  </a>
+  <h1 id="main_title">JMLs DATABASE FOR CHEFS/COOKS</h1>
+</div>
+
+    <!--<h1 id="main_title"> JMLs DATABASE FOR CHEFS/COOKS</H1>
+    <a class="navbar-brand" href="index2.php">
+                    <img src="images/logo.jpg" class="logo">
+                    Just Like Mama's
+                </a>
+    <div class="container" >-->
